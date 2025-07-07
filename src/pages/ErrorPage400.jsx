@@ -1,5 +1,6 @@
 import { Button, Container, Image } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import logo404 from "../assets/404-logo.png";
 
 export default function ErrorPage400() {
   const navigate = useNavigate();
@@ -22,9 +23,9 @@ export default function ErrorPage400() {
         className="d-flex flex-column align-items-center"
         style={{ marginTop: "200px" }}
       >
-        <Image src="/src/assets/404-logo.png" style={{ maxHeight: "40vh" }} />
+        <Image src={logo404} style={{ maxHeight: "40vh" }} />
         <h1>Opps! Page Not Found</h1>
-        <Button variant="warning" className="my-3" onClick={toHome}>
+        <Button variant="outline-light" className="my-3" onClick={toHome}>
           <i className="bi bi-house me-2" />
           Back to home
         </Button>

@@ -4,6 +4,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import { APIContext } from "../contexts/APIContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import vioScreenLogo2 from "../assets/logo2.png";
 
 export default function LoginPage() {
   const { authToken, setAuthToken } = useContext(AuthContext);
@@ -65,7 +66,7 @@ export default function LoginPage() {
       >
         <Container className="d-flex justify-content-center">
           <Image
-            src={"/src/assets/logo2.png"}
+            src={vioScreenLogo2}
             className="p-3"
             style={{ maxHeight: "30vh" }}
             fluid

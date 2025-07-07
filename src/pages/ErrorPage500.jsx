@@ -1,4 +1,5 @@
 import { Container, Image } from "react-bootstrap";
+import logo500 from "../assets/500-logo.png";
 
 export default function ErrorPage500() {
   return (
@@ -16,7 +17,7 @@ export default function ErrorPage500() {
         className="d-flex flex-column align-items-center"
         style={{ marginTop: "200px" }}
       >
-        <Image src="/src/assets/500-logo.png" style={{ maxHeight: "40vh" }} />
+        <Image src={logo500} style={{ maxHeight: "40vh" }} />
         <h1>Internal Server Error</h1>
       </Container>
     </div>

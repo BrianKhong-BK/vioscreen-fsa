@@ -1,6 +1,7 @@
 import { Container, Button, Navbar, Image } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import vioScreenLogo from "../assets/logo.png";
 
 export default function HomeLayout() {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function HomeLayout() {
           <Navbar.Brand href="/">
             <Image
               className="me-2"
-              src="/src/assets/logo.png"
+              src={vioScreenLogo}
               style={{ maxHeight: "30px" }}
               fluid
             />

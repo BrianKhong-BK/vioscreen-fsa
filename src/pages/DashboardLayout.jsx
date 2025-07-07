@@ -2,6 +2,7 @@ import { Container, Button, Navbar, Nav, Image } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
 import { useContext } from "react";
+import vioScreenLogo from "../assets/logo.png";
 
 export default function DashboardLayout() {
   const { setAuthToken } = useContext(AuthContext);
@@ -17,7 +18,7 @@ export default function DashboardLayout() {
           <Navbar.Brand href="/">
             <Image
               className="me-2"
-              src="/src/assets/logo.png"
+              src={vioScreenLogo}
               style={{ maxHeight: "30px" }}
               fluid
             />
