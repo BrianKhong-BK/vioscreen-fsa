@@ -15,7 +15,7 @@ export default function HomeLayout() {
 
   return (
     <>
-      <Navbar className="justify-content-between">
+      <Navbar className="bg-dark navbar-dark justify-content-between">
         <Container>
           <Navbar.Brand href="/">
             <Image
@@ -27,11 +27,11 @@ export default function HomeLayout() {
             <strong>VioScreen</strong>
           </Navbar.Brand>
           <div>
-            <Button variant="dark" className="me-2" onClick={login}>
+            <Button variant="outline-light" className="me-2" onClick={login}>
               <i className="bi bi-box-arrow-in-right me-2" />
               Login
             </Button>
-            <Button variant="dark" onClick={signUp}>
+            <Button variant="outline-light" onClick={signUp}>
               <i className="bi bi-person-add me-2" />
               Sign Up
             </Button>

@@ -12,7 +12,7 @@ export default function DashboardLayout() {
 
   return (
     <>
-      <Navbar>
+      <Navbar className="bg-dark navbar-dark">
         <Container>
           <Navbar.Brand href="/">
             <Image
@@ -29,7 +29,7 @@ export default function DashboardLayout() {
             </Nav>
           </Container>
           <div>
-            <Button variant="dark d-flex" onClick={logout}>
+            <Button variant="outline-light" className="d-flex" onClick={logout}>
               <i className="bi bi-box-arrow-in-right me-2" /> Logout
             </Button>
           </div>
