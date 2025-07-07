@@ -73,6 +73,7 @@ export default function SignupPage() {
             <Form.Control
               value={username}
               type="text"
+              placeholder="Username"
               onChange={(event) => setUsername(event.target.value)}
               required
             />
@@ -83,6 +84,7 @@ export default function SignupPage() {
               value={phonenumber}
               type="tel"
               pattern="[0-9]{3}-[0-9]{7}"
+              placeholder="01X-XXXXXXX"
               onChange={(event) => setPhonenumber(event.target.value)}
               required
             />
@@ -92,6 +94,7 @@ export default function SignupPage() {
             <Form.Control
               value={email}
               type="email"
+              placeholder="somebody@example.com"
               onChange={(event) => setEmail(event.target.value)}
               required
             />
@@ -101,6 +104,7 @@ export default function SignupPage() {
             <Form.Control
               value={password}
               type="password"
+              placeholder="Password"
               onChange={(event) => setPassword(event.target.value)}
               required
             />

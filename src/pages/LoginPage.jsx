@@ -79,6 +79,7 @@ export default function LoginPage() {
             <Form.Control
               value={email}
               type="email"
+              placeholder="somebody@example.com"
               onChange={(event) => setEmail(event.target.value)}
               required
             />
@@ -88,6 +89,7 @@ export default function LoginPage() {
             <Form.Control
               value={password}
               type="password"
+              placeholder="Password"
               onChange={(event) => setPassword(event.target.value)}
               required
             />
