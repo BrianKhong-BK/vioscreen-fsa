@@ -20,8 +20,7 @@ import RequireAuth from "./components/RequireAuth";
 export default function App() {
   const [authToken, setAuthToken] = useLocalStorage("authToken", "");
   const [serverStatus, setServerStatus] = useState(null);
-  const URL =
-    "https://a38c57ab-d785-48f6-b7d5-5975bbabda99-00-3j9kc1hn7brcc.sisko.replit.dev";
+  const URL = "https://vercel-fsa-api.vercel.app";
 
   const Layout = authToken ? DashboardLayout : HomeLayout;
 
