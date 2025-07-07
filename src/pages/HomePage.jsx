@@ -48,6 +48,7 @@ export default function HomePage() {
             <Card.Img variant="top" src={movie.image} className="rounded-top" />
             <Card.Body className="d-flex flex-column text-center">
               <Card.Title>{movie.name}</Card.Title>
+              <Card.Text>{movie.duration}</Card.Text>
               <Button variant="warning" className="mb-3" onClick={handleModal}>
                 <i className="bi bi-film me-2" />
                 Watch Trailer
